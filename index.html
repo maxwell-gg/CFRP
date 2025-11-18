@@ -9,44 +9,69 @@
 <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png">
 </head>
 <body>
-<nav style="display:flex; justify-content:center; align-items:center; padding:15px; background:rgba(0,0,0,0.7); backdrop-filter:blur(8px); position:fixed; width:100%; top:0; z-index:1000;">
-<div class="socials" style="margin-right:auto; display:flex; gap:15px;">
-<a href="https://www.tiktok.com/@czechfantasyrp" target="_blank"><i class="fab fa-tiktok"></i></a>
-<a href="https://discord.gg/mQsNM3RHud" target="_blank"><i class="fab fa-discord"></i></a>
-</div>
-<ul style="display:flex; gap:30px; list-style:none; margin:0; padding:0;">
-<li><a href="index.html">Domů</a></li>
-<li><a href="pravidla.html">Pravidla</a></li>
-<li><a href="info.html">Info</a></li>
-<li><a href="vip.html">VIP</a></li>
-<li><a href="kontakty.html">Kontakt</a></li>
-</ul>
-<div class="logo" style="margin-left:auto;"><img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png?ex=691cdd4d&is=691b8bcd&hm=4057c834a9b187170eb5c451e880a6fbbdc8974d22cbc4e099c36328e689ce93&" alt="CFRP Logo" style="height:50px; border-radius:10px;"></div>
-<div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')"><i class="fas fa-bars"></i></div>
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="CFRP Logo">
+    </div>
+
+    <ul>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="pravidla.html">Pravidla</a></li>
+        <li><a href="frakce.html">Frakce</a></li>
+        <li><a href="vip.html">VIP</a></li>
+        <li><a href="kontakty.html">Kontakt</a></li>
+    </ul>
+
+    <div class="socials">
+        <a href="https://discord.gg/mQsNM3RHud" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.tiktok.com/@czechfantasyrp" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')">
+        <i class="fas fa-bars"></i>
+    </div>
 </nav>
+
 <section class="hero">
-<div>
-<h1>Czech Fantasy RP</h1>
-<p>Nejlepší CZ/SK RP pod sluncem</p>
-<button class="btn" onclick="location.href='pravidla.html'">Přejít na pravidla</button>
-</div>
+    <div class="video-overlay"></div>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <img src="logo.png" alt="CFRP Logo" class="hero-logo">
+        <h1>Czech Fantasy RP</h1>
+        <p>Nejlepší český server pod sluncem - WL-OFF</p>
+    </div>
 </section>
+
 <section class="section" id="news">
 <h2>Novinky ze serveru</h2>
 <div class="news-grid">
-<div class="news-card"><img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png"><h3>Nábor do Policie ČR</h3><p>Otevřeli jsme nové kolo náborů! Zkus to taky a chraň město.</p></div>
-<div class="news-card"><img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png"><h3>Nová auta na serveru</h3><p>Dorazila čerstvá várka importů — přijď si je projet.</p></div>
-<div class="news-card"><img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png"><h3>Whitelist restart</h3><p>Proběhl nový whitelist systém, který zlepší kvalitu RP.</p></div>
+<div class="news-card"><img src="https://policie.jobs.cz/assets/components/share-icons/images/logo-share-1200x630.png?av=574acff1e350f5cb"><h3>Nábor do Policie ČR</h3><p>Otevřeli jsme nové kolo náborů! Zkus to taky a chraň město. více info majitel frakce</p></div>
+<div class="news-card"><img src="https://storage.googleapis.com/zing-cz/media/images/3t9tgadwcrjkdd3665b9bbd9f2f0766747410.jpg"><h3>Nová auta na serveru</h3><p>Dorazila čerstvá várka importů — přijď si je projet.</p></div>
+<div class="news-card"><img src="https://media.discordapp.net/attachments/1407848285313700020/1432902276086763571/image.png?ex=691dc47c&is=691c72fc&hm=6093ca6bd409025ec60595e644115318fd71d1c9352e0a2c5abc5d493539e1b9&=&format=webp&quality=lossless&width=912&height=609"><h3>Volné frkace</h3><p>Nabíhejte zažádat o frakce do ticketu.</p></div>
 </div>
 </section>
+
 <section class="section gallery">
 <h2>Fotky ze serveru</h2>
 <div class="gallery-grid">
-<img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png">
-<img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png">
-<img src="https://cdn.discordapp.com/attachments/1364141527453925497/1440082994550411355/CFRPicon.png">
+<img src="https://cdn.discordapp.com/attachments/1426899188012027944/1440308257007734894/Snimek_obrazovky_2025-11-18_125000.png?ex=691daf18&is=691c5d98&hm=27141a3816ce00f2f9fc428a021121662cf90f166120a8674d277b7c28ffcb1b&">
+<img src="https://cdn.discordapp.com/attachments/1426899188012027944/1440034143181471904/image.png?ex=691e014e&is=691cafce&hm=1a22a541ae571e4ca87be27879c87334b2d5059385fe1935d157243b7e389fae&">
+<img src="https://cdn.discordapp.com/attachments/1426899188012027944/1439706153192919111/image.png?ex=691d7897&is=691c2717&hm=fac3ba840d68b651a5f550ae4aeb5d090a20707059c0f48073b10409d6f173fe&">
+<img src="https://cdn.discordapp.com/attachments/1426899188012027944/1439546898091343934/image.png?ex=691d8d05&is=691c3b85&hm=6bc4c2da84ee1946a09e507e3b3478021552a3e6254971b8e880b261259059dd&">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1438259151825276939/Snimek_obrazovky_2025-11-12_210325.png?ex=691d7af7&is=691c2977&hm=2bc55263e87e4af0cabc68982ff533fef63dfcb13c909cf8cd0abb5138d081c9&=&format=webp&quality=lossless&width=808&height=884">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1437899407650455702/1FCBF15B-C190-46FE-9AFB-54543C78D958.png?ex=691d7d6d&is=691c2bed&hm=2bcdd9ffce5804e16a8ea203dc63bcbb1f789ce6ec4b16cc1342b35cb4122cd7&=&format=webp&quality=lossless&width=912&height=533">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1437061857465733312/image.png?ex=691dbd26&is=691c6ba6&hm=52052f58169ab3de7a3b11d42d4b17216590b1338ee0c01cfa034c8bac1b6462&=&format=webp&quality=lossless&width=912&height=853">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1436857724788015104/image.png?ex=691da7c9&is=691c5649&hm=d599fa459fa89ad1dccceebbbc52f81fc8e769db0bf8ee40caccab9ee0ce3a68&=&format=webp&quality=lossless&width=808&height=339">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1433078219602530465/image.png?ex=691dbf98&is=691c6e18&hm=84b2d5a919a2c20ac8eec9616b147d42cd0f5fcc4021fbd76d1b0c8d5043d88d&=&format=webp&quality=lossless&width=912&height=464">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1432692838067470427/image.png?ex=691daa2e&is=691c58ae&hm=c1a2fe5b529aba372d196a6d9bd2be22112e8f0989bd182170977aaff69f6245&=&format=webp&quality=lossless&width=912&height=864">
+<img src="https://cdn.discordapp.com/attachments/1426899188012027944/1430617040095543307/image.png?ex=691e05f1&is=691cb471&hm=e84d4b99eab4cffb19b34d52adb0e56a86e994d36738632171efb114f9e2d744&">
+<img src="https://media.discordapp.net/attachments/1426899188012027944/1439327982559822047/Screenshot_2025-11-15_195459.png?ex=691e12a4&is=691cc124&hm=69995c631e8389e37661fcda8d11aad25483889c0ae95e72b810a6298c91ffcb&=&format=webp&quality=lossless&width=808&height=427">
 </div>
 </section>
+
 <footer>
 <h2>Kontakt vedení</h2>
 <div class="contact-container">
@@ -55,6 +80,14 @@
 </div>
 <p style="margin-top:20px;">Czech Fantasy RP © 2025</p>
 </footer>
+
+<script>
+window.addEventListener("scroll", () => {
+    document.body.classList.toggle("scrolled", window.scrollY > 80);
+});
+</script>
 </body>
 </html>
+
+
 
